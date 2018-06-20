@@ -1,0 +1,365 @@
+* p,
+a,
+h1,
+h2,
+th {
+    font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+    color: #fff;
+
+}
+
+.wraper {
+    display: flex;
+    flex-direction: column;
+    background-image: url(imgs/Netflix%20Banner.png);
+}
+
+.wraper h1 {
+    font-size: 83px;
+    font-weight: 700;
+    margin-bottom: 0;
+}
+
+.wraper h2 {
+    font-family: 28px;
+    font-weight: 400px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin-bottom: 30px;
+    margin-top: 10px;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+header img {
+    width: 200px;
+    padding-left: 30px;
+}
+
+.sing-in {
+    background-color: #d60000;
+    border: none;
+    color: #fff;
+    padding: 8px 10px;
+    text-align: center;
+    border-radius: 4px;
+    text-decoration: none;
+    letter-spacing: 1.5px;
+    cursor: pointer;
+    margin: 5px;
+    margin-right: 40px;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+
+.sing-in:hover {
+    background-color: #ed0000;
+}
+
+.banner-text {
+    padding-bottom: 300px;
+    padding-left: 30px;
+}
+
+body {
+    background-color: #000;
+}
+
+.meniu {
+    display: flex;
+    justify-content: space-around;
+    padding: 30px;
+    background-color: #161616;
+    border-bottom: 5px solid #969696;
+    margin-top: 0;
+}
+
+.meniu li {
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    margin: 10px;
+    margin-left: 0px;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    list-style: none;
+}
+
+.meniu a {
+    text-decoration: none;
+    opacity: 0.5;
+}
+
+.meniu a:hover {
+    opacity: 1;
+}
+
+.meniu a img {
+    height: 80px;
+    width: 80px;
+    display: flex;
+    opacity: 0.5;
+    margin-left: 20px;
+    padding-bottom: 10px
+}
+
+#cancelNav img {
+    padding-left: 30px;
+}
+
+.meniu a img:hover {
+    opacity: 1;
+}
+
+.meniu-wrapper {
+    margin: 8%;
+}
+
+.active {
+    position: relative;
+    display: block;
+    border-bottom: 5px solid #ed0000;
+
+}
+
+#Menu1 {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-start;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+#cancel-img {
+    display: flex;
+    align-self: flex-end;
+    width: 500px;
+    height: 350px;
+    margin-left: 10px;
+    margin-right: 100px;
+}
+
+.cancel-txt {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    justify-content: center;
+    margin-left: 100px;
+}
+
+#cancel-btn {
+    display: flex;
+    align-self: flex-start;
+}
+
+#Menu2 {
+    display: none;
+}
+
+.container-text {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+}
+
+.any-device-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.any-device-img img {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    width: 300px;
+    height: 200px;
+
+}
+
+.container {
+    margin: 20px;
+}
+
+#Menu3 {
+    display: none;
+}
+
+table {
+    margin-top: 50px;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th,
+td {
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #2d2c2c;
+}
+
+.join-btn {
+    background-color: #d60000;
+    border: none;
+    color: #fff;
+    padding: 15px 15px;
+    text-align: center;
+    border-radius: 4px;
+    text-decoration: none;
+    letter-spacing: 1.5px;
+    cursor: pointer;
+    margin: 5px;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.join-btn:hover {
+    background-color: #ed0000;
+}
+
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 25%;
+    margin-left: 15%;
+    margin-bottom: 5%;
+}
+
+
+
+footer ul {
+    display: flex;
+    flex-direction: column;
+
+}
+
+footer a {
+    color: #999999;
+    text-decoration: none;
+    cursor: pointer;
+    line-height: 3;
+    font-size: 13px;
+    font-weight: 400;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 800px) {
+  
+    
+    #Menu3 h1{
+        margin-bottom: 30px;
+    }
+
+    #cancel-img {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        max-width: 300px;
+        max-height: 300px
+    }
+
+    #cancel img {
+        margin: 0;
+        margin-bottom: 20px;
+    }
+
+    #device {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+
+    }
+
+    .container-text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 20px;
+    }
+
+    .container-text h1 {
+        font-size: 20px
+    }
+
+    .any-device-img {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+    }
+
+    .any-device-img img {
+        width: 100%;
+        height: 10%;
+    }
+
+    .any-device-img p,
+    h2 {
+        display: flex;
+        align-content: center;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    * {
+        margin: 0;
+        margin-right: 0;
+    }
+    
+     .wraper h1{
+        font-size: 26px;
+        padding-left: 90px;
+        padding-top: 30px;
+    }
+    
+    .wraper .join-btn{
+        margin-left: 70px;
+    }
+    
+    .banner-text {
+        font-size: 10px;
+        padding-bottom: 30px;
+        padding-left: 30px;
+    }
+
+    .wraper {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+    }
+
+    .meniu li {
+        margin: 0;
+    }
+    
+    .meniu a img{
+        width: 50px;
+        height: 50px;
+        padding-bottom: 0;
+    } 
+
+    footer {
+        display: flex;
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>Netflix Vintage</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script type="text/javascript" src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="wraper">
+        <header>
+            <a href="#"><img src="imgs/Vintage%20Netflix.png"></a>
+            <a href="#" class="sing-in">Sing In</a>
+        </header>
+
+        <div class="banner-text">
+            <h1>See what’s next.</h1>
+            <h2>Watch anywhere. Cancel anytime.</h2>
+            <a href="#" class="join-btn">Join Free For a month</a>
+        </div>
+    </div>
+
+    <ul class="meniu">
+        <li onclick="toggleVisibility('Menu1');" class="active"><a href="#"><img src="imgs/exit%20(1).png">No commitments <br> Cancel online at anytime</a></li>
+        <li onclick="toggleVisibility('Menu2');"><a href="#"><img src="imgs/monitor.png">Watch anywhere</a></li>
+        <li onclick="toggleVisibility('Menu3');"><a href="#"><img src="imgs/price-tag%20(1).png">Pick your price</a></li>
+    </ul>
+
+    <div class="meniu-wrapper">
+
+        <div id="Menu1">
+            <img id="cancel-img" src="imgs/asset_cancelanytime_withdevice.png">
+            <div class="cancel-txt">
+                <h1>If you decide Netflix Vintage isn’t for you - no problem. <br> No commitment. Cancel online anytime.</h1>
+                <a href="#" id="cancel-btn" class="join-btn">Join free for a Month</a>
+            </div>
+
+        </div>
+
+        <div id="Menu2">
+            <div class="container-text">
+                <h1>Watch TV shows and movies anytime, anywhere - presonalized for you.</h1>
+                <a href="#" id="device-btn" class="join-btn">Join free for a Month</a>
+            </div>
+
+            <div class="any-device-img">
+                <div class="container">
+                    <img src="imgs/asset_TV_UI.png">
+                    <h2>Watch on your TV</h2>
+                    <p>Smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray players and more.</p>
+                </div>
+
+                <div class="container">
+                    <img src="imgs/proiector.png">
+                    <h2>Watch instantly or download for later</h2>
+                    <p>Available on ohone and tablet, wherever you go.</p>
+                </div>
+
+                <div class="container">
+                    <img src="imgs/computer.png">
+                    <h2>Use any computer</h2>
+                    <p>Watch right on Netflix.com</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="Menu3">
+            <h1>Choose one plan and watch everything on Netflix</h1>
+            <a href="#" class="join-btn">Join free for a Month</a>
+
+            <table>
+                <tr>
+                    <th>Basic</th>
+                    <th>Standard</th>
+                    <th>Premium</th>
+                </tr>
+                <tr>
+                    <th>Monthly price after free month</th>
+                    <th>EUR 7.99</th>
+                    <th>EUR 9.99</th>
+                    <th>EUR 11.99</th>
+                </tr>
+                <tr>
+                    <th>HD available</th>
+                    <th>no</th>
+                    <th>yes</th>
+                    <th>yes</th>
+                </tr>
+                <tr>
+                    <th>Ultra HD available</th>
+                    <th>no</th>
+                    <th>no</th>
+                    <th>yes</th>
+                </tr>
+                <tr>
+                    <th>Screens you can watch on at the same time</th>
+                    <th>1</th>
+                    <th>2</th>
+                    <th>4</th>
+                </tr>
+                <tr>
+                    <th>Watch on your laptop, TV, phone and tablet</th>
+                    <th>yes</th>
+                    <th>yes</th>
+                    <th>yes</th>
+                </tr>
+                <tr>
+                    <th>Unlimited movies and TV shows</th>
+                    <th>yes</th>
+                    <th>yes</th>
+                    <th>yes</th>
+                </tr>
+                <tr>
+                    <th>Cancel anytime</th>
+                    <th>yes</th>
+                    <th>yes</th>
+                    <th>yes</th>
+                </tr>
+                <tr>
+                    <th>First month free</th>
+                    <th>yes</th>
+                    <th>yes</th>
+                    <th>yes</th>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <footer>
+        
+        <ul>
+            <a href="#">FQA</a>
+            <a href="#">Investor Relations</a>
+            <a href="#">Privacy</a>
+            <a href="#">Speed Test</a>
+        </ul>
+
+        <ul>
+            <a href="#">Help Center</a>
+            <a href="#">Jobs</a>
+            <a href="#">Cookie Preferences</a>
+            <a href="#">Netflix Originals</a>
+        </ul>
+
+        <ul>
+            <a href="#">Account</a>
+            <a href="#">Ways to Watch</a>
+            <a href="#">Corporate Information</a>
+        </ul>
+
+        <ul>
+            <a href="#">Media Center</a>
+            <a href="#">Terms of Use</a>
+            <a href="#">Contact Us</a>
+        </ul>
+    </footer>
+
+
+    <script type="text/javascript" src="script.js"></script>
+</body>
+
+</html>
