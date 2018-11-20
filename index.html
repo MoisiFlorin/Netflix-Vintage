@@ -10,7 +10,7 @@
     <meta name="author" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <script type="text/javascript" src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 
     <link rel="stylesheet" href="style.css">
 </head>
@@ -19,7 +19,7 @@
     <div class="wraper">
         <header>
             <a href="#"><img src="imgs/Vintage%20Netflix.png"></a>
-            <a href="#" class="sing-in">Sing In</a>
+            <a href="#" class="sign-in">Sign In</a>
         </header>
 
         <div class="banner-text">
@@ -29,15 +29,21 @@
         </div>
     </div>
 
-    <ul class="meniu">
-        <li onclick="toggleVisibility('Menu1');" class="active"><a href="#"><img src="imgs/exit%20(1).png">No commitments <br> Cancel online at anytime</a></li>
-        <li onclick="toggleVisibility('Menu2');"><a href="#"><img src="imgs/monitor.png">Watch anywhere</a></li>
-        <li onclick="toggleVisibility('Menu3');"><a href="#"><img src="imgs/price-tag%20(1).png">Pick your price</a></li>
+    <ul class="menu">
+        <div class="menu-tab">
+            <li onclick="toggleVisibility('Menu1');" class="active"><a href="#menu1"><img class="first-img" src="imgs/exit%20(1).png">No commitments <br> Cancel online at anytime</a></li>
+        </div>
+        <div class="menu-tab">
+            <li onclick="toggleVisibility('Menu2');"><a href="#menu2"><img src="imgs/monitor.png">Watch anywhere</a></li>
+        </div>
+        <div class="menu-tab">
+            <li onclick="toggleVisibility('Menu3');"><a href="#menu3"><img src="imgs/price-tag%20(1).png">Pick your price</a></li>
+        </div>
     </ul>
 
     <div class="meniu-wrapper">
 
-        <div id="Menu1">
+        <div id="Menu1"><a name="menu1"></a>
             <img id="cancel-img" src="imgs/asset_cancelanytime_withdevice.png">
             <div class="cancel-txt">
                 <h1>If you decide Netflix Vintage isn’t for you - no problem. <br> No commitment. Cancel online anytime.</h1>
@@ -46,9 +52,9 @@
 
         </div>
 
-        <div id="Menu2">
+        <div id="Menu2"><a name="menu2"></a>
             <div class="container-text">
-                <h1>Watch TV shows and movies anytime, anywhere - presonalized for you.</h1>
+                <h1 name="menu2">Watch TV shows and movies anytime, anywhere - presonalized for you.</h1>
                 <a href="#" id="device-btn" class="join-btn">Join free for a Month</a>
             </div>
 
@@ -73,8 +79,8 @@
             </div>
         </div>
 
-        <div id="Menu3">
-            <h1>Choose one plan and watch everything on Netflix</h1>
+        <div id="Menu3"><a name="menu3"></a>
+            <h1 name="menu3">Choose one plan and watch everything on Netflix</h1>
             <a href="#" class="join-btn">Join free for a Month</a>
 
             <table>
@@ -136,7 +142,7 @@
     </div>
 
     <footer>
-        
+
         <ul>
             <a href="#">FQA</a>
             <a href="#">Investor Relations</a>
@@ -163,7 +169,6 @@
             <a href="#">Contact Us</a>
         </ul>
     </footer>
-
 
     <script type="text/javascript" src="script.js"></script>
 </body>
